@@ -1,0 +1,1293 @@
+
+*** Running vivado
+    with args -log sopc.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source sopc.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source sopc.tcl -notrace
+Command: synth_design -top sopc -part xc7k325tffg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
+INFO: [Device 21-403] Loading part xc7k325tffg676-2
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2148 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 760.887 ; gain = 176.539
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'sopc' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/sopc.v:38]
+INFO: [Synth 8-6157] synthesizing module 'NPC' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/NPC.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ifu' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/ifu.v:5]
+INFO: [Synth 8-6157] synthesizing module 'pc' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/pc.v:3]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/pc.v:23]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/pc.v:23]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/pc.v:23]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/pc.v:23]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/pc.v:24]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/pc.v:24]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/pc.v:24]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/pc.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'pc' (1#1) [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/pc.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ifu' (2#1) [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/ifu.v:5]
+INFO: [Synth 8-6157] synthesizing module 'meminst' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/meminst.v:3]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.runs/synth_1/.Xil/Vivado-9740-LAPTOP-PCHHQ2Q9/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (3#1) [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.runs/synth_1/.Xil/Vivado-9740-LAPTOP-PCHHQ2Q9/realtime/blk_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (7) of module 'blk_mem_gen_0' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/meminst.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'meminst' (4#1) [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/meminst.v:3]
+INFO: [Synth 8-6157] synthesizing module 'if_id' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/if_id.v:3]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/if_id.v:23]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/if_id.v:23]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/if_id.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'if_id' (5#1) [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/if_id.v:3]
+INFO: [Synth 8-6157] synthesizing module 'id' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:3]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:74]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:75]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:75]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:75]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:78]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:78]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:78]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:78]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:78]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:78]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:78]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:78]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:78]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:78]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:78]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:78]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:78]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:78]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:78]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:78]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:79]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:79]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:79]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:79]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:79]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:79]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:79]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:79]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:79]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:79]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:79]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:79]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:79]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:79]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:80]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:80]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:80]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:80]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:80]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:80]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:80]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:80]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:80]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:80]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:80]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:80]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:80]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:80]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:80]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:81]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:81]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:81]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:81]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:81]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:81]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:81]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:81]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:81]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:81]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:81]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:81]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:81]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:81]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:81]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:81]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:81]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:82]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:82]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:82]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:82]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:82]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:82]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:82]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:82]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:82]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:82]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:82]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:82]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:82]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:82]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:82]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:82]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:82]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:82]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:84]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:84]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:84]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:84]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:84]
+INFO: [Common 17-14] Message 'Synth 8-589' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-251] stop [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:319]
+INFO: [Synth 8-6155] done synthesizing module 'id' (6#1) [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id.v:3]
+INFO: [Synth 8-6157] synthesizing module 'regs' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/regs.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'regs' (7#1) [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/regs.v:3]
+INFO: [Synth 8-6157] synthesizing module 'csrfile' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/csrs.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'csrfile' (8#1) [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/csrs.v:3]
+INFO: [Synth 8-6157] synthesizing module 'id_ex' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id_ex.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'id_ex' (9#1) [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/id_ex.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ex' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/ex.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ex' (10#1) [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/ex.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ex_mem' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/ex_mem.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ex_mem' (11#1) [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/ex_mem.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ls' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/ls.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/ls.v:44]
+INFO: [Synth 8-6155] done synthesizing module 'ls' (12#1) [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/ls.v:3]
+INFO: [Synth 8-6157] synthesizing module 'memdata' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/memdata.v:3]
+WARNING: [Synth 8-689] width (32) of port connection 'addra' does not match port width (7) of module 'blk_mem_gen_0' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/memdata.v:139]
+INFO: [Synth 8-6155] done synthesizing module 'memdata' (13#1) [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/memdata.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mem_wb' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/mem_wb.v:3]
+WARNING: [Synth 8-3848] Net wb_CtrlWantBranch in module/entity mem_wb does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/mem_wb.v:49]
+WARNING: [Synth 8-3848] Net wb_CtrlBranch in module/entity mem_wb does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/mem_wb.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'mem_wb' (14#1) [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/mem_wb.v:3]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/NPC.v:611]
+INFO: [Synth 8-6157] synthesizing module 'wb' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/wb.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'wb' (15#1) [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/wb.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ctrl' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/ctrl.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'ctrl' (16#1) [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/ctrl.v:3]
+INFO: [Synth 8-6157] synthesizing module 'register' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/register.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'register' (17#1) [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/register.v:3]
+INFO: [Synth 8-6157] synthesizing module 'wishbone_bus_if' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/wishbone_bus_if.v:3]
+	Parameter WB_IDLE bound to: 2'b01 
+	Parameter WB_BUSY bound to: 2'b10 
+	Parameter WB_WAIT_FOR_STALL bound to: 2'b11 
+INFO: [Synth 8-6155] done synthesizing module 'wishbone_bus_if' (18#1) [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/wishbone_bus_if.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'NPC' (19#1) [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/NPC.v:3]
+INFO: [Synth 8-6157] synthesizing module 'gpio_top' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/gpio/gpio_top.v:115]
+	Parameter dw bound to: 32 - type: integer 
+	Parameter aw bound to: 8 - type: integer 
+	Parameter gw bound to: 32 - type: integer 
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/gpio/gpio_top.v:987]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/gpio/gpio_top.v:987]
+INFO: [Synth 8-6155] done synthesizing module 'gpio_top' (20#1) [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/gpio/gpio_top.v:115]
+INFO: [Synth 8-6157] synthesizing module 'wb_conmax_top' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:61]
+	Parameter dw bound to: 32 - type: integer 
+	Parameter aw bound to: 32 - type: integer 
+	Parameter rf_addr bound to: 4'b1111 
+	Parameter pri_sel0 bound to: 2'b10 
+	Parameter pri_sel1 bound to: 2'b10 
+	Parameter pri_sel2 bound to: 2'b10 
+	Parameter pri_sel3 bound to: 2'b10 
+	Parameter pri_sel4 bound to: 2'b10 
+	Parameter pri_sel5 bound to: 2'b10 
+	Parameter pri_sel6 bound to: 2'b10 
+	Parameter pri_sel7 bound to: 2'b10 
+	Parameter pri_sel8 bound to: 2'b10 
+	Parameter pri_sel9 bound to: 2'b10 
+	Parameter pri_sel10 bound to: 2'b10 
+	Parameter pri_sel11 bound to: 2'b10 
+	Parameter pri_sel12 bound to: 2'b10 
+	Parameter pri_sel13 bound to: 2'b10 
+	Parameter pri_sel14 bound to: 2'b10 
+	Parameter pri_sel15 bound to: 2'b10 
+	Parameter sw bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'wb_conmax_master_if' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_master_if.v:61]
+	Parameter dw bound to: 32 - type: integer 
+	Parameter aw bound to: 32 - type: integer 
+	Parameter sw bound to: 4 - type: integer 
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_master_if.v:442]
+INFO: [Synth 8-226] default block is never used [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_master_if.v:442]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_master_if.v:586]
+INFO: [Synth 8-226] default block is never used [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_master_if.v:586]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_master_if.v:610]
+INFO: [Synth 8-226] default block is never used [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_master_if.v:610]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_master_if.v:634]
+INFO: [Synth 8-226] default block is never used [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_master_if.v:634]
+INFO: [Synth 8-6155] done synthesizing module 'wb_conmax_master_if' (21#1) [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_master_if.v:61]
+INFO: [Synth 8-6157] synthesizing module 'wb_conmax_slave_if' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_slave_if.v:61]
+	Parameter pri_sel bound to: 2'b10 
+	Parameter aw bound to: 32 - type: integer 
+	Parameter dw bound to: 32 - type: integer 
+	Parameter sw bound to: 4 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'wb_conmax_arb' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_arb.v:63]
+	Parameter grant0 bound to: 3'b000 
+	Parameter grant1 bound to: 3'b001 
+	Parameter grant2 bound to: 3'b010 
+	Parameter grant3 bound to: 3'b011 
+	Parameter grant4 bound to: 3'b100 
+	Parameter grant5 bound to: 3'b101 
+	Parameter grant6 bound to: 3'b110 
+	Parameter grant7 bound to: 3'b111 
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_arb.v:115]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_arb.v:115]
+INFO: [Synth 8-6155] done synthesizing module 'wb_conmax_arb' (22#1) [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_arb.v:63]
+INFO: [Synth 8-6157] synthesizing module 'wb_conmax_msel' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_msel.v:61]
+	Parameter pri_sel bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'wb_conmax_pri_enc' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_pri_enc.v:61]
+	Parameter pri_sel bound to: 2'b10 
+INFO: [Synth 8-6157] synthesizing module 'wb_conmax_pri_dec' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_pri_dec.v:61]
+	Parameter pri_sel bound to: 2'b10 
+INFO: [Synth 8-6155] done synthesizing module 'wb_conmax_pri_dec' (23#1) [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_pri_dec.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'wb_conmax_pri_enc' (24#1) [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_pri_enc.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'wb_conmax_msel' (25#1) [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_msel.v:61]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_slave_if.v:296]
+INFO: [Synth 8-226] default block is never used [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_slave_if.v:296]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_slave_if.v:310]
+INFO: [Synth 8-226] default block is never used [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_slave_if.v:310]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_slave_if.v:324]
+INFO: [Synth 8-226] default block is never used [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_slave_if.v:324]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_slave_if.v:352]
+INFO: [Synth 8-226] default block is never used [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_slave_if.v:352]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_slave_if.v:392]
+INFO: [Synth 8-226] default block is never used [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_slave_if.v:392]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_slave_if.v:406]
+INFO: [Synth 8-226] default block is never used [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_slave_if.v:406]
+INFO: [Synth 8-6155] done synthesizing module 'wb_conmax_slave_if' (26#1) [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_slave_if.v:61]
+INFO: [Synth 8-6157] synthesizing module 'wb_conmax_rf' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_rf.v:61]
+	Parameter rf_addr bound to: 4'b1111 
+	Parameter dw bound to: 32 - type: integer 
+	Parameter aw bound to: 32 - type: integer 
+	Parameter sw bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'wb_conmax_rf' (27#1) [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_rf.v:61]
+WARNING: [Synth 8-689] width (1) of port connection 'i_wb_data_o' does not match port width (32) of module 'wb_conmax_rf' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:4786]
+WARNING: [Synth 8-7023] instance 'rf' of module 'wb_conmax_rf' has 38 connections declared, but only 28 given [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:4760]
+WARNING: [Synth 8-3848] Net m0s6_data_i in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:559]
+WARNING: [Synth 8-3848] Net m0s6_ack in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:566]
+WARNING: [Synth 8-3848] Net m0s6_err in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:567]
+WARNING: [Synth 8-3848] Net m0s6_rty in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:568]
+WARNING: [Synth 8-3848] Net m0s7_data_i in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:569]
+WARNING: [Synth 8-3848] Net m0s7_ack in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:576]
+WARNING: [Synth 8-3848] Net m0s7_err in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:577]
+WARNING: [Synth 8-3848] Net m0s7_rty in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:578]
+WARNING: [Synth 8-3848] Net m0s8_data_i in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:579]
+WARNING: [Synth 8-3848] Net m0s8_ack in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:586]
+WARNING: [Synth 8-3848] Net m0s8_err in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:587]
+WARNING: [Synth 8-3848] Net m0s8_rty in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:588]
+WARNING: [Synth 8-3848] Net m0s9_data_i in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:589]
+WARNING: [Synth 8-3848] Net m0s9_ack in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:596]
+WARNING: [Synth 8-3848] Net m0s9_err in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:597]
+WARNING: [Synth 8-3848] Net m0s9_rty in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:598]
+WARNING: [Synth 8-3848] Net m0s10_data_i in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:599]
+WARNING: [Synth 8-3848] Net m0s10_ack in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:606]
+WARNING: [Synth 8-3848] Net m0s10_err in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:607]
+WARNING: [Synth 8-3848] Net m0s10_rty in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:608]
+WARNING: [Synth 8-3848] Net m0s11_data_i in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:609]
+WARNING: [Synth 8-3848] Net m0s11_ack in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:616]
+WARNING: [Synth 8-3848] Net m0s11_err in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:617]
+WARNING: [Synth 8-3848] Net m0s11_rty in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:618]
+WARNING: [Synth 8-3848] Net m0s12_data_i in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:619]
+WARNING: [Synth 8-3848] Net m0s12_ack in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:626]
+WARNING: [Synth 8-3848] Net m0s12_err in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:627]
+WARNING: [Synth 8-3848] Net m0s12_rty in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:628]
+WARNING: [Synth 8-3848] Net m0s13_data_i in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:629]
+WARNING: [Synth 8-3848] Net m0s13_ack in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:636]
+WARNING: [Synth 8-3848] Net m0s13_err in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:637]
+WARNING: [Synth 8-3848] Net m0s13_rty in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:638]
+WARNING: [Synth 8-3848] Net m0s14_data_i in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:639]
+WARNING: [Synth 8-3848] Net m0s14_ack in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:646]
+WARNING: [Synth 8-3848] Net m0s14_err in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:647]
+WARNING: [Synth 8-3848] Net m0s14_rty in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:648]
+WARNING: [Synth 8-3848] Net m0s15_data_i in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:649]
+WARNING: [Synth 8-3848] Net m0s15_ack in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:656]
+WARNING: [Synth 8-3848] Net m0s15_err in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:657]
+WARNING: [Synth 8-3848] Net m0s15_rty in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:658]
+WARNING: [Synth 8-3848] Net m1s6_data_i in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:719]
+WARNING: [Synth 8-3848] Net m1s6_ack in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:726]
+WARNING: [Synth 8-3848] Net m1s6_err in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:727]
+WARNING: [Synth 8-3848] Net m1s6_rty in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:728]
+WARNING: [Synth 8-3848] Net m1s7_data_i in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:729]
+WARNING: [Synth 8-3848] Net m1s7_ack in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:736]
+WARNING: [Synth 8-3848] Net m1s7_err in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:737]
+WARNING: [Synth 8-3848] Net m1s7_rty in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:738]
+WARNING: [Synth 8-3848] Net m1s8_data_i in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:739]
+WARNING: [Synth 8-3848] Net m1s8_ack in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:746]
+WARNING: [Synth 8-3848] Net m1s8_err in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:747]
+WARNING: [Synth 8-3848] Net m1s8_rty in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:748]
+WARNING: [Synth 8-3848] Net m1s9_data_i in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:749]
+WARNING: [Synth 8-3848] Net m1s9_ack in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:756]
+WARNING: [Synth 8-3848] Net m1s9_err in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:757]
+WARNING: [Synth 8-3848] Net m1s9_rty in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:758]
+WARNING: [Synth 8-3848] Net m1s10_data_i in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:759]
+WARNING: [Synth 8-3848] Net m1s10_ack in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:766]
+WARNING: [Synth 8-3848] Net m1s10_err in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:767]
+WARNING: [Synth 8-3848] Net m1s10_rty in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:768]
+WARNING: [Synth 8-3848] Net m1s11_data_i in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:769]
+WARNING: [Synth 8-3848] Net m1s11_ack in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:776]
+WARNING: [Synth 8-3848] Net m1s11_err in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:777]
+WARNING: [Synth 8-3848] Net m1s11_rty in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:778]
+WARNING: [Synth 8-3848] Net m1s12_data_i in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:779]
+WARNING: [Synth 8-3848] Net m1s12_ack in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:786]
+WARNING: [Synth 8-3848] Net m1s12_err in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:787]
+WARNING: [Synth 8-3848] Net m1s12_rty in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:788]
+WARNING: [Synth 8-3848] Net m1s13_data_i in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:789]
+WARNING: [Synth 8-3848] Net m1s13_ack in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:796]
+WARNING: [Synth 8-3848] Net m1s13_err in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:797]
+WARNING: [Synth 8-3848] Net m1s13_rty in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:798]
+WARNING: [Synth 8-3848] Net m1s14_data_i in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:799]
+WARNING: [Synth 8-3848] Net m1s14_ack in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:806]
+WARNING: [Synth 8-3848] Net m1s14_err in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:807]
+WARNING: [Synth 8-3848] Net m1s14_rty in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:808]
+WARNING: [Synth 8-3848] Net m1s15_data_i in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:809]
+WARNING: [Synth 8-3848] Net m1s15_ack in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:816]
+WARNING: [Synth 8-3848] Net m1s15_err in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:817]
+WARNING: [Synth 8-3848] Net m1s15_rty in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:818]
+WARNING: [Synth 8-3848] Net m2s0_data_o in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:820]
+WARNING: [Synth 8-3848] Net m2s0_addr in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:821]
+WARNING: [Synth 8-3848] Net m2s0_sel in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:822]
+WARNING: [Synth 8-3848] Net m2s0_we in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:823]
+WARNING: [Synth 8-3848] Net m2s0_cyc in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:824]
+WARNING: [Synth 8-3848] Net m2s0_stb in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:825]
+WARNING: [Synth 8-3848] Net m3s0_data_o in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:980]
+WARNING: [Synth 8-3848] Net m3s0_addr in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:981]
+WARNING: [Synth 8-3848] Net m3s0_sel in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:982]
+WARNING: [Synth 8-3848] Net m3s0_we in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:983]
+WARNING: [Synth 8-3848] Net m3s0_cyc in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:984]
+WARNING: [Synth 8-3848] Net m3s0_stb in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:985]
+WARNING: [Synth 8-3848] Net m4s0_data_o in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:1140]
+WARNING: [Synth 8-3848] Net m4s0_addr in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:1141]
+WARNING: [Synth 8-3848] Net m4s0_sel in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:1142]
+WARNING: [Synth 8-3848] Net m4s0_we in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:1143]
+WARNING: [Synth 8-3848] Net m4s0_cyc in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:1144]
+WARNING: [Synth 8-3848] Net m4s0_stb in module/entity wb_conmax_top does not have driver. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:1145]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'wb_conmax_top' (28#1) [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'sopc' (29#1) [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/sopc.v:38]
+WARNING: [Synth 8-3331] design wb has unconnected port clk
+WARNING: [Synth 8-3331] design wb has unconnected port rst
+WARNING: [Synth 8-3331] design mem_wb has unconnected port wb_CtrlWantBranch
+WARNING: [Synth 8-3331] design mem_wb has unconnected port wb_CtrlBranch
+WARNING: [Synth 8-3331] design mem_wb has unconnected port stall[3]
+WARNING: [Synth 8-3331] design mem_wb has unconnected port stall[2]
+WARNING: [Synth 8-3331] design mem_wb has unconnected port stall[1]
+WARNING: [Synth 8-3331] design mem_wb has unconnected port stall[0]
+WARNING: [Synth 8-3331] design mem_wb has unconnected port mem_CtrlWantBranch
+WARNING: [Synth 8-3331] design mem_wb has unconnected port mem_CtrlBranch
+WARNING: [Synth 8-3331] design memdata has unconnected port rst
+WARNING: [Synth 8-3331] design memdata has unconnected port i_addr[1]
+WARNING: [Synth 8-3331] design memdata has unconnected port i_addr[0]
+WARNING: [Synth 8-3331] design ex_mem has unconnected port stall[5]
+WARNING: [Synth 8-3331] design ex_mem has unconnected port stall[2]
+WARNING: [Synth 8-3331] design ex_mem has unconnected port stall[1]
+WARNING: [Synth 8-3331] design ex_mem has unconnected port stall[0]
+WARNING: [Synth 8-3331] design ex has unconnected port rst
+WARNING: [Synth 8-3331] design id_ex has unconnected port stall[5]
+WARNING: [Synth 8-3331] design id_ex has unconnected port stall[4]
+WARNING: [Synth 8-3331] design id_ex has unconnected port stall[1]
+WARNING: [Synth 8-3331] design id_ex has unconnected port stall[0]
+WARNING: [Synth 8-3331] design id has unconnected port clk
+WARNING: [Synth 8-3331] design if_id has unconnected port stall[5]
+WARNING: [Synth 8-3331] design if_id has unconnected port stall[4]
+WARNING: [Synth 8-3331] design if_id has unconnected port stall[3]
+WARNING: [Synth 8-3331] design if_id has unconnected port stall[0]
+WARNING: [Synth 8-3331] design meminst has unconnected port i_sel[3]
+WARNING: [Synth 8-3331] design meminst has unconnected port i_sel[2]
+WARNING: [Synth 8-3331] design meminst has unconnected port i_sel[1]
+WARNING: [Synth 8-3331] design meminst has unconnected port i_sel[0]
+WARNING: [Synth 8-3331] design pc has unconnected port stall[5]
+WARNING: [Synth 8-3331] design pc has unconnected port stall[4]
+WARNING: [Synth 8-3331] design pc has unconnected port stall[3]
+WARNING: [Synth 8-3331] design pc has unconnected port stall[2]
+WARNING: [Synth 8-3331] design pc has unconnected port stall[1]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 842.652 ; gain = 258.305
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 842.652 ; gain = 258.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 842.652 ; gain = 258.305
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'NPC/u_meminst/blk_mem_gen_0_meminst'
+Finished Parsing XDC File [c:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'NPC/u_meminst/blk_mem_gen_0_meminst'
+Parsing XDC File [c:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'NPC/u_memdata/blk_mem_gen_0_memdata'
+Finished Parsing XDC File [c:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'NPC/u_memdata/blk_mem_gen_0_memdata'
+Parsing XDC File [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/constrs_1/imports/new/gpio.xdc]
+WARNING: [Vivado 12-584] No ports matched 'uart_in'. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/constrs_1/imports/new/gpio.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'uart_out'. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/constrs_1/imports/new/gpio.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'uart_in'. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/constrs_1/imports/new/gpio.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'uart_out'. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/constrs_1/imports/new/gpio.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'i2c_scl_o'. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/constrs_1/imports/new/gpio.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'i2c_sda_o'. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/constrs_1/imports/new/gpio.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'uart_out'. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/constrs_1/imports/new/gpio.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'i2c_scl_o'. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/constrs_1/imports/new/gpio.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'i2c_sda_o'. [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/constrs_1/imports/new/gpio.xdc:75]
+Finished Parsing XDC File [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/constrs_1/imports/new/gpio.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/constrs_1/imports/new/gpio.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/sopc_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/constrs_1/imports/new/gpio.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/sopc_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/sopc_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 994.906 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 994.906 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 994.906 ; gain = 410.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7k325tffg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 994.906 ; gain = 410.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for NPC/u_memdata/blk_mem_gen_0_memdata. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for NPC/u_meminst/blk_mem_gen_0_meminst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 994.906 ; gain = 410.559
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'wishbone_cyc_o_reg' into 'wishbone_stb_o_reg' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/wishbone_bus_if.v:46]
+INFO: [Synth 8-802] inferred FSM for state register 'wishbone_state_reg' in module 'wishbone_bus_if'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 WB_IDLE |                               00 |                               01
+                 WB_BUSY |                               01 |                               10
+       WB_WAIT_FOR_STALL |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wishbone_state_reg' using encoding 'sequential' in module 'wishbone_bus_if'
+WARNING: [Synth 8-327] inferring latch for variable 'cpu_data_o_reg' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/core/wishbone_bus_if.v:113]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 994.906 ; gain = 410.559
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 9     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 3     
++---Registers : 
+	               32 Bit    Registers := 78    
+	               16 Bit    Registers := 17    
+	                5 Bit    Registers := 9     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 30    
+	                2 Bit    Registers := 15    
+	                1 Bit    Registers := 138   
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 76    
+	  33 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 8     
+	   5 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 2     
+	   2 Input     12 Bit        Muxes := 1     
+	   3 Input     10 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 3     
+	   2 Input      5 Bit        Muxes := 11    
+	  13 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   4 Input      4 Bit        Muxes := 2     
+	   3 Input      4 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 48    
+	   5 Input      3 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 30    
+	   7 Input      3 Bit        Muxes := 180   
+	   4 Input      3 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 28    
+	   3 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 143   
+	   3 Input      1 Bit        Muxes := 9     
+	  11 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 240   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module ifu 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module meminst 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module if_id 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module id 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	   2 Input     12 Bit        Muxes := 1     
+	   3 Input     10 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	  13 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   3 Input      2 Bit        Muxes := 1     
+Module regs 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 5     
+	  33 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 64    
+	   3 Input      1 Bit        Muxes := 1     
+Module csrfile 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 4     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 4     
+	   5 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+Module id_ex 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 6     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module ex 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 12    
+	   2 Input      1 Bit        Muxes := 2     
+	  11 Input      1 Bit        Muxes := 1     
+Module ex_mem 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 9     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 2     
+Module ls 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+Module memdata 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 2     
+Module mem_wb 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 9     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 9     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module ctrl 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 3     
+Module register 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
+Module wishbone_bus_if 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   3 Input     32 Bit        Muxes := 4     
+	   3 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 8     
+Module NPC 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 11    
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module gpio_top 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 10    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module wb_conmax_master_if 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module wb_conmax_arb 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      3 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 6     
+	   7 Input      1 Bit        Muxes := 8     
+Module wb_conmax_pri_dec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      4 Bit        Muxes := 1     
+Module wb_conmax_pri_enc 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 2     
+Module wb_conmax_msel 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      3 Bit        Muxes := 1     
+Module wb_conmax_slave_if 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 9     
+Module wb_conmax_rf 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 17    
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 840 (col length:140)
+BRAMs: 890 (col length: RAMB18 140 RAMB36 70)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design mem_wb has unconnected port wb_CtrlWantBranch
+WARNING: [Synth 8-3331] design mem_wb has unconnected port wb_CtrlBranch
+WARNING: [Synth 8-3331] design mem_wb has unconnected port stall[3]
+WARNING: [Synth 8-3331] design mem_wb has unconnected port stall[2]
+WARNING: [Synth 8-3331] design mem_wb has unconnected port stall[1]
+WARNING: [Synth 8-3331] design mem_wb has unconnected port stall[0]
+WARNING: [Synth 8-3331] design mem_wb has unconnected port mem_CtrlWantBranch
+WARNING: [Synth 8-3331] design mem_wb has unconnected port mem_CtrlBranch
+WARNING: [Synth 8-3331] design memdata has unconnected port rst
+WARNING: [Synth 8-3331] design memdata has unconnected port i_addr[31]
+WARNING: [Synth 8-3331] design memdata has unconnected port i_addr[30]
+WARNING: [Synth 8-3331] design memdata has unconnected port i_addr[29]
+WARNING: [Synth 8-3331] design memdata has unconnected port i_addr[28]
+WARNING: [Synth 8-3331] design memdata has unconnected port i_addr[27]
+WARNING: [Synth 8-3331] design memdata has unconnected port i_addr[26]
+WARNING: [Synth 8-3331] design memdata has unconnected port i_addr[25]
+WARNING: [Synth 8-3331] design memdata has unconnected port i_addr[24]
+WARNING: [Synth 8-3331] design memdata has unconnected port i_addr[23]
+WARNING: [Synth 8-3331] design memdata has unconnected port i_addr[22]
+WARNING: [Synth 8-3331] design memdata has unconnected port i_addr[21]
+WARNING: [Synth 8-3331] design memdata has unconnected port i_addr[20]
+WARNING: [Synth 8-3331] design memdata has unconnected port i_addr[19]
+WARNING: [Synth 8-3331] design memdata has unconnected port i_addr[18]
+WARNING: [Synth 8-3331] design memdata has unconnected port i_addr[17]
+WARNING: [Synth 8-3331] design memdata has unconnected port i_addr[16]
+WARNING: [Synth 8-3331] design memdata has unconnected port i_addr[15]
+WARNING: [Synth 8-3331] design memdata has unconnected port i_addr[14]
+WARNING: [Synth 8-3331] design memdata has unconnected port i_addr[13]
+WARNING: [Synth 8-3331] design memdata has unconnected port i_addr[12]
+WARNING: [Synth 8-3331] design memdata has unconnected port i_addr[11]
+WARNING: [Synth 8-3331] design memdata has unconnected port i_addr[10]
+WARNING: [Synth 8-3331] design memdata has unconnected port i_addr[9]
+WARNING: [Synth 8-3331] design memdata has unconnected port i_addr[1]
+WARNING: [Synth 8-3331] design memdata has unconnected port i_addr[0]
+WARNING: [Synth 8-3331] design ex_mem has unconnected port stall[5]
+WARNING: [Synth 8-3331] design ex_mem has unconnected port stall[2]
+WARNING: [Synth 8-3331] design ex_mem has unconnected port stall[1]
+WARNING: [Synth 8-3331] design ex_mem has unconnected port stall[0]
+WARNING: [Synth 8-3331] design ex has unconnected port rst
+WARNING: [Synth 8-3331] design id_ex has unconnected port stall[5]
+WARNING: [Synth 8-3331] design id_ex has unconnected port stall[4]
+WARNING: [Synth 8-3331] design id_ex has unconnected port stall[1]
+WARNING: [Synth 8-3331] design id_ex has unconnected port stall[0]
+WARNING: [Synth 8-3331] design id has unconnected port clk
+WARNING: [Synth 8-3331] design if_id has unconnected port stall[5]
+WARNING: [Synth 8-3331] design if_id has unconnected port stall[4]
+WARNING: [Synth 8-3331] design if_id has unconnected port stall[3]
+WARNING: [Synth 8-3331] design if_id has unconnected port stall[0]
+WARNING: [Synth 8-3331] design ifu has unconnected port stall[4]
+WARNING: [Synth 8-3331] design ifu has unconnected port stall[3]
+WARNING: [Synth 8-3331] design ifu has unconnected port stall[2]
+WARNING: [Synth 8-3331] design ifu has unconnected port stall[1]
+INFO: [Synth 8-3886] merging instance 'gpio_top0/sync_reg[17]' (FDC) to 'gpio_top0/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio_top0/sync_reg[18]' (FDC) to 'gpio_top0/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio_top0/sync_reg[19]' (FDC) to 'gpio_top0/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio_top0/sync_reg[20]' (FDC) to 'gpio_top0/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio_top0/sync_reg[21]' (FDC) to 'gpio_top0/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio_top0/sync_reg[22]' (FDC) to 'gpio_top0/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio_top0/sync_reg[23]' (FDC) to 'gpio_top0/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio_top0/sync_reg[24]' (FDC) to 'gpio_top0/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio_top0/sync_reg[25]' (FDC) to 'gpio_top0/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio_top0/sync_reg[26]' (FDC) to 'gpio_top0/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio_top0/sync_reg[27]' (FDC) to 'gpio_top0/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio_top0/sync_reg[28]' (FDC) to 'gpio_top0/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio_top0/sync_reg[29]' (FDC) to 'gpio_top0/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio_top0/sync_reg[30]' (FDC) to 'gpio_top0/sync_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gpio_top0/sync_reg[31] )
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf4_reg[0]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf4_reg[1]' (FDCE) to 'wb_conmax_top0/rf/conf4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf4_reg[2]' (FDCE) to 'wb_conmax_top0/rf/conf4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf4_reg[3]' (FDCE) to 'wb_conmax_top0/rf/conf4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf4_reg[4]' (FDCE) to 'wb_conmax_top0/rf/conf4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf4_reg[5]' (FDCE) to 'wb_conmax_top0/rf/conf4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf4_reg[6]' (FDCE) to 'wb_conmax_top0/rf/conf4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf4_reg[7]' (FDCE) to 'wb_conmax_top0/rf/conf4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf4_reg[8]' (FDCE) to 'wb_conmax_top0/rf/conf4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf4_reg[9]' (FDCE) to 'wb_conmax_top0/rf/conf4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf4_reg[10]' (FDCE) to 'wb_conmax_top0/rf/conf4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf4_reg[11]' (FDCE) to 'wb_conmax_top0/rf/conf4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf4_reg[12]' (FDCE) to 'wb_conmax_top0/rf/conf4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf4_reg[13]' (FDCE) to 'wb_conmax_top0/rf/conf4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf4_reg[14]' (FDCE) to 'wb_conmax_top0/rf/conf4_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf4_reg[15]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf3_reg[0]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf3_reg[1]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf3_reg[2]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf3_reg[3]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf3_reg[4]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf3_reg[5]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf3_reg[6]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf3_reg[7]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf3_reg[8]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf3_reg[9]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf3_reg[10]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf3_reg[11]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf3_reg[12]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf3_reg[13]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf3_reg[14]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf3_reg[15]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf2_reg[0]' (FDCE) to 'wb_conmax_top0/rf/conf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf2_reg[1]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf2_reg[2]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf2_reg[3]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf2_reg[4]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf2_reg[5]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf2_reg[6]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf2_reg[7]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf2_reg[8]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf2_reg[9]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf2_reg[10]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf2_reg[11]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf2_reg[12]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf2_reg[13]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf2_reg[14]' (FDCE) to 'wb_conmax_top0/rf/conf2_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf2_reg[15]' (FDCE) to 'wb_conmax_top0/rf/conf1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf1_reg[0]' (FDCE) to 'wb_conmax_top0/rf/conf5_reg[0]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf1_reg[1]' (FDCE) to 'wb_conmax_top0/rf/conf1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf1_reg[2]' (FDCE) to 'wb_conmax_top0/rf/conf1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf1_reg[3]' (FDCE) to 'wb_conmax_top0/rf/conf1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf1_reg[4]' (FDCE) to 'wb_conmax_top0/rf/conf1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf1_reg[5]' (FDCE) to 'wb_conmax_top0/rf/conf1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf1_reg[6]' (FDCE) to 'wb_conmax_top0/rf/conf1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf1_reg[7]' (FDCE) to 'wb_conmax_top0/rf/conf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf1_reg[8]' (FDCE) to 'wb_conmax_top0/rf/conf1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf1_reg[9]' (FDCE) to 'wb_conmax_top0/rf/conf1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf1_reg[10]' (FDCE) to 'wb_conmax_top0/rf/conf1_reg[11]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf1_reg[11]' (FDCE) to 'wb_conmax_top0/rf/conf1_reg[12]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf1_reg[12]' (FDCE) to 'wb_conmax_top0/rf/conf1_reg[13]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf1_reg[13]' (FDCE) to 'wb_conmax_top0/rf/conf1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf1_reg[14]' (FDCE) to 'wb_conmax_top0/rf/conf1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf1_reg[15]' (FDCE) to 'wb_conmax_top0/rf/conf5_reg[1]'
+INFO: [Synth 8-3886] merging instance 'gpio_top0/ext_pad_s_reg[17]' (FDC) to 'gpio_top0/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio_top0/ext_pad_s_reg[18]' (FDC) to 'gpio_top0/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio_top0/ext_pad_s_reg[19]' (FDC) to 'gpio_top0/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio_top0/ext_pad_s_reg[20]' (FDC) to 'gpio_top0/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio_top0/ext_pad_s_reg[21]' (FDC) to 'gpio_top0/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio_top0/ext_pad_s_reg[22]' (FDC) to 'gpio_top0/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio_top0/ext_pad_s_reg[23]' (FDC) to 'gpio_top0/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio_top0/ext_pad_s_reg[24]' (FDC) to 'gpio_top0/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio_top0/ext_pad_s_reg[25]' (FDC) to 'gpio_top0/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio_top0/ext_pad_s_reg[26]' (FDC) to 'gpio_top0/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio_top0/ext_pad_s_reg[27]' (FDC) to 'gpio_top0/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio_top0/ext_pad_s_reg[28]' (FDC) to 'gpio_top0/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio_top0/ext_pad_s_reg[29]' (FDC) to 'gpio_top0/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio_top0/ext_pad_s_reg[30]' (FDC) to 'gpio_top0/sync_reg[31]'
+INFO: [Synth 8-3886] merging instance 'gpio_top0/ext_pad_s_reg[31]' (FDC) to 'gpio_top0/sync_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/rf/\conf5_reg[0] )
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf5_reg[1]' (FDCE) to 'wb_conmax_top0/rf/conf5_reg[2]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf5_reg[2]' (FDCE) to 'wb_conmax_top0/rf/conf5_reg[3]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf5_reg[3]' (FDCE) to 'wb_conmax_top0/rf/conf5_reg[4]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf5_reg[4]' (FDCE) to 'wb_conmax_top0/rf/conf5_reg[5]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf5_reg[5]' (FDCE) to 'wb_conmax_top0/rf/conf5_reg[6]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf5_reg[6]' (FDCE) to 'wb_conmax_top0/rf/conf5_reg[7]'
+INFO: [Synth 8-3886] merging instance 'wb_conmax_top0/rf/conf5_reg[7]' (FDCE) to 'wb_conmax_top0/rf/conf5_reg[8]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/rf/\conf5_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (NPC/u_dwishbone_bus_if/\FSM_sequential_wishbone_state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/rf/rf_we_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gpio_top0/sync_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/rf/\conf5_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/rf/\conf5_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\gpio_top0/sync_reg[31] )
+WARNING: [Synth 8-3332] Sequential element (FSM_sequential_wishbone_state_reg[1]) is unused and will be removed from module wishbone_bus_if.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s5/m2_cyc_r_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s4/m2_cyc_r_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s3/m2_cyc_r_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s2/m2_cyc_r_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s1/m2_cyc_r_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s5/\msel/arb1/state_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s5/\msel/arb2/state_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s5/\msel/arb3/state_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s5/\msel/arb1/state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s5/\msel/arb2/state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s5/\msel/arb3/state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s5/\msel/arb1/state_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s5/\msel/arb2/state_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s5/\msel/arb3/state_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s5/\msel/pri_out_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s4/\msel/arb1/state_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s4/\msel/arb2/state_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s4/\msel/arb3/state_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s4/\msel/arb1/state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s4/\msel/arb2/state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s4/\msel/arb3/state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s4/\msel/arb1/state_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s4/\msel/arb2/state_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s4/\msel/arb3/state_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s4/\msel/pri_out_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s3/\msel/arb1/state_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s3/\msel/arb2/state_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s3/\msel/arb3/state_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s3/\msel/arb1/state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s3/\msel/arb2/state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s3/\msel/arb3/state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s3/\msel/arb1/state_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s3/\msel/arb2/state_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s3/\msel/arb3/state_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s3/\msel/pri_out_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s2/\msel/arb1/state_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s2/\msel/arb2/state_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s2/\msel/arb3/state_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s2/\msel/arb1/state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s2/\msel/arb2/state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s2/\msel/arb3/state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s2/\msel/arb1/state_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s2/\msel/arb2/state_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s2/\msel/arb3/state_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s2/\msel/pri_out_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s1/\msel/arb1/state_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s1/\msel/arb2/state_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s1/\msel/arb3/state_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s1/\msel/arb1/state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s1/\msel/arb2/state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s1/\msel/arb3/state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s1/\msel/arb1/state_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s1/\msel/arb2/state_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s1/\msel/arb3/state_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s1/\msel/pri_out_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s0/m2_cyc_r_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/m1/s0_cyc_o_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s0/\msel/arb1/state_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s0/\msel/arb2/state_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s0/\msel/arb3/state_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s0/\msel/arb1/state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s0/\msel/arb2/state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s0/\msel/arb3/state_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s0/\msel/arb1/state_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s0/\msel/arb2/state_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s0/\msel/arb3/state_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s0/\msel/pri_out_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (wb_conmax_top0/s0/m1_cyc_r_reg)
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[31] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[31]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[31] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[31] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[30] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[30]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[30] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[30] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[29] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[29]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[29] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[29] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[28] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[28]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[28] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[28] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[27] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[27]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[27] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[27] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[26] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[26]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[26] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[26] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[25] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[25]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[25] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[25] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[24] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[24]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[24] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[24] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[23] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[23]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[23] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[23] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[22] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[22]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[22] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[22] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[21] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[21]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[21] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[21] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[20] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[20]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[20] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[20] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[19] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[19]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[19] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[19] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[18] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[18]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[18] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[18] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[17] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[17]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[17] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[17] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[16] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[16]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[16] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[16] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[15] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[15]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[15] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[15] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[14] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[14]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[14] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[14] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[13] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[13]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[13] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[13] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[12] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[12]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[12] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[12] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[11] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[11]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[11] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[11] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[10] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[10]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[10] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[10] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[9] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[9]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[9] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[9] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[8] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[8]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[8] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[8] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[7] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[7]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[7] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[7] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[6] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[6]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[6] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[6] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[5] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[5]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[5] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[5] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[4] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[4]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[4] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[4] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[3] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[3]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[3] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[3] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[2] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[2]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[2] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[2] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[1] with 1st driver pin 'wb_conmax_top0/s5/wb_data_o[1]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_data_i[1] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_data_i[1] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_addr_i[7] with 1st driver pin 'wb_conmax_top0/s5/wb_addr_o[7]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_addr_i[7] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_addr_i[7] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_addr_i[6] with 1st driver pin 'wb_conmax_top0/s5/wb_addr_o[6]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_addr_i[6] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_addr_i[6] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_addr_i[5] with 1st driver pin 'wb_conmax_top0/s5/wb_addr_o[5]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_addr_i[5] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_addr_i[5] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_addr_i[4] with 1st driver pin 'wb_conmax_top0/s5/wb_addr_o[4]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_addr_i[4] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_addr_i[4] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_addr_i[3] with 1st driver pin 'wb_conmax_top0/s5/wb_addr_o[3]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_addr_i[3] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_addr_i[3] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_addr_i[2] with 1st driver pin 'wb_conmax_top0/s5/wb_addr_o[2]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_addr_i[2] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_addr_i[2] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_addr_i[1] with 1st driver pin 'wb_conmax_top0/s5/wb_addr_o[1]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_addr_i[1] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_addr_i[1] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_sel_i[3] with 1st driver pin 'wb_conmax_top0/s5/wb_sel_o[3]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_sel_i[3] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_sel_i[3] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_sel_i[2] with 1st driver pin 'wb_conmax_top0/s5/wb_sel_o[2]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_sel_i[2] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_sel_i[2] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_sel_i[1] with 1st driver pin 'wb_conmax_top0/s5/wb_sel_o[1]' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin i_wb_sel_i[1] with 2nd driver pin 'GND' [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+CRITICAL WARNING: [Synth 8-6858] multi-driven net i_wb_sel_i[1] is connected to at least one constant driver which has been preserved, other driver is ignored [C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.srcs/sources_1/new/wb_conmax/wb_conmax_top.v:3704]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:01 . Memory (MB): peak = 994.906 ; gain = 410.559
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 994.906 ; gain = 410.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 994.906 ; gain = 410.559
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 1107.570 ; gain = 523.223
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 1112.410 ; gain = 528.062
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 1112.410 ; gain = 528.062
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 1112.410 ; gain = 528.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 1112.410 ; gain = 528.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:10 ; elapsed = 00:01:11 . Memory (MB): peak = 1112.410 ; gain = 528.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:10 ; elapsed = 00:01:11 . Memory (MB): peak = 1112.410 ; gain = 528.062
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |blk_mem_gen_0 |         2|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |blk_mem_gen_0    |     1|
+|2     |blk_mem_gen_0__2 |     1|
+|3     |BUFG             |     2|
+|4     |CARRY4           |   108|
+|5     |LUT1             |     5|
+|6     |LUT2             |   195|
+|7     |LUT3             |   573|
+|8     |LUT4             |   358|
+|9     |LUT5             |   519|
+|10    |LUT6             |  1736|
+|11    |MUXF7            |   257|
+|12    |FDCE             |  2071|
+|13    |FDPE             |    29|
+|14    |FDRE             |     5|
+|15    |LDC              |    32|
+|16    |IBUF             |    18|
+|17    |OBUF             |    32|
++------+-----------------+------+
+
+Report Instance Areas: 
++------+-----------------------+--------------------+------+
+|      |Instance               |Module              |Cells |
++------+-----------------------+--------------------+------+
+|1     |top                    |                    |  6004|
+|2     |  NPC                  |NPC                 |  5581|
+|3     |    u_csrfile          |csrfile             |   160|
+|4     |    u_ctrl             |ctrl                |     2|
+|5     |    u_dwishbone_bus_if |wishbone_bus_if     |   231|
+|6     |    u_ex               |ex                  |   126|
+|7     |    u_ex_mem           |ex_mem              |   431|
+|8     |    u_id_ex            |id_ex               |  1384|
+|9     |    u_if_id            |if_id               |   777|
+|10    |    u_ifu              |ifu                 |    81|
+|11    |      u_pc             |pc                  |    80|
+|12    |    u_mem_wb           |mem_wb              |   445|
+|13    |    u_memdata          |memdata             |    50|
+|14    |    u_meminst          |meminst             |    70|
+|15    |    u_regs             |regs                |  1824|
+|16    |  gpio_top0            |gpio_top            |   367|
+|17    |  wb_conmax_top0       |wb_conmax_top       |     4|
+|18    |    m0                 |wb_conmax_master_if |     1|
+|19    |    s0                 |wb_conmax_slave_if  |     3|
++------+-----------------------+--------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:10 ; elapsed = 00:01:11 . Memory (MB): peak = 1112.410 ; gain = 528.062
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 123 critical warnings and 54 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:03 ; elapsed = 00:01:08 . Memory (MB): peak = 1112.410 ; gain = 375.809
+Synthesis Optimization Complete : Time (s): cpu = 00:01:10 ; elapsed = 00:01:11 . Memory (MB): peak = 1112.410 ; gain = 528.062
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 397 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1112.410 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  LDC => LDCE: 32 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+279 Infos, 305 Warnings, 123 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:15 ; elapsed = 00:01:17 . Memory (MB): peak = 1112.410 ; gain = 815.660
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1112.410 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/hurricane/Desktop/RISCV/MAJIA-Processor/MAJIA-Processor/MAJIA-Processor.runs/synth_1/sopc.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file sopc_utilization_synth.rpt -pb sopc_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri May 16 17:19:57 2025...

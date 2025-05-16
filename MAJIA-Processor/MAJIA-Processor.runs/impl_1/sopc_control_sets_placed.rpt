@@ -1,0 +1,139 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Fri May 16 17:20:35 2025
+| Host         : LAPTOP-PCHHQ2Q9 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file sopc_control_sets_placed.rpt
+| Design       : sopc
+| Device       : xc7k325t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    61 |
+|    Minimum number of control sets                        |    61 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    23 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    61 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |    16 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    44 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               5 |            3 |
+| No           | No                    | Yes                    |             120 |           42 |
+| No           | Yes                   | No                     |              32 |           14 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            1980 |          796 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+--------------------------------------------------------+------------------+------------------+----------------+
+|  Clock Signal  |                      Enable Signal                     | Set/Reset Signal | Slice Load Count | Bel Load Count |
++----------------+--------------------------------------------------------+------------------+------------------+----------------+
+|  clk_IBUF_BUFG |                                                        |                  |                3 |              5 |
+|  clk_IBUF_BUFG | NPC/u_dwishbone_bus_if/wishbone_addr_o_reg[2]_0[0]     | rst_IBUF         |                2 |              8 |
+|  clk_IBUF_BUFG | NPC/u_dwishbone_bus_if/wishbone_addr_o_reg[3]_1[3]     | rst_IBUF         |                1 |              8 |
+|  clk_IBUF_BUFG | NPC/u_dwishbone_bus_if/wishbone_addr_o_reg[3]_1[2]     | rst_IBUF         |                2 |              8 |
+|  clk_IBUF_BUFG | NPC/u_dwishbone_bus_if/wishbone_addr_o_reg[3]_1[1]     | rst_IBUF         |                1 |              8 |
+|  clk_IBUF_BUFG | NPC/u_dwishbone_bus_if/wishbone_addr_o_reg[3]_1[0]     | rst_IBUF         |                1 |              8 |
+|  clk_IBUF_BUFG | NPC/u_dwishbone_bus_if/wishbone_addr_o_reg[3]_0[1]     | rst_IBUF         |                2 |              8 |
+|  clk_IBUF_BUFG | NPC/u_dwishbone_bus_if/wishbone_addr_o_reg[5]_0[2]     | rst_IBUF         |                1 |              8 |
+|  clk_IBUF_BUFG | NPC/u_dwishbone_bus_if/wishbone_addr_o_reg[5]_0[1]     | rst_IBUF         |                3 |              8 |
+|  clk_IBUF_BUFG | NPC/u_dwishbone_bus_if/wishbone_addr_o_reg[2]_0[1]     | rst_IBUF         |                1 |              8 |
+|  clk_IBUF_BUFG | NPC/u_dwishbone_bus_if/wishbone_addr_o_reg[3]_0[2]     | rst_IBUF         |                1 |              8 |
+|  clk_IBUF_BUFG | NPC/u_dwishbone_bus_if/wishbone_addr_o_reg[2]_0[3]     | rst_IBUF         |                1 |              8 |
+|  clk_IBUF_BUFG | NPC/u_dwishbone_bus_if/wishbone_addr_o_reg[3]_0[0]     | rst_IBUF         |                1 |              8 |
+|  clk_IBUF_BUFG | NPC/u_dwishbone_bus_if/wishbone_addr_o_reg[5]_0[0]     | rst_IBUF         |                2 |              8 |
+|  clk_IBUF_BUFG | NPC/u_dwishbone_bus_if/wishbone_addr_o_reg[5]_0[3]     | rst_IBUF         |                4 |              8 |
+|  clk_IBUF_BUFG | NPC/u_dwishbone_bus_if/wishbone_addr_o_reg[2]_0[2]     | rst_IBUF         |                3 |              8 |
+|  clk_IBUF_BUFG | NPC/u_dwishbone_bus_if/wishbone_addr_o_reg[3]_0[3]     | rst_IBUF         |                1 |              8 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_22[0]                        | rst_IBUF         |               11 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_0[0]                         | rst_IBUF         |               20 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_20[0]                        | rst_IBUF         |               13 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_23[0]                        | rst_IBUF         |               16 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_16[0]                        | rst_IBUF         |               14 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_1[0]                         | rst_IBUF         |               16 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_11[0]                        | rst_IBUF         |               17 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_12[0]                        | rst_IBUF         |               17 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_13[0]                        | rst_IBUF         |               15 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_14[0]                        | rst_IBUF         |               14 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_15[0]                        | rst_IBUF         |               11 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_17[0]                        | rst_IBUF         |               19 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_3[0]                         | rst_IBUF         |               14 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_wen_mstatus                            | rst_IBUF         |                9 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_27[0]                        | rst_IBUF         |               15 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_29[0]                        | rst_IBUF         |               14 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_9[0]                         | rst_IBUF         |               14 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_24[0]                        | rst_IBUF         |               16 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_8[0]                         | rst_IBUF         |               13 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_5[0]                         | rst_IBUF         |               21 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_30[0]                        | rst_IBUF         |               17 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_28[0]                        | rst_IBUF         |               18 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_4[0]                         | rst_IBUF         |               17 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_6[0]                         | rst_IBUF         |               11 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_26[0]                        | rst_IBUF         |               18 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_25[0]                        | rst_IBUF         |               14 |             32 |
+|  clk_IBUF_BUFG | NPC/u_dwishbone_bus_if/rgpio_ctrl_reg[0][0]            | rst_IBUF         |               15 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_wen_mcause                             | rst_IBUF         |               17 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_wen_mtvec                              | rst_IBUF         |                6 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_wen_mepc                               | rst_IBUF         |                9 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_7[0]                         | rst_IBUF         |               18 |             32 |
+|  clk_IBUF_BUFG | NPC/u_if_id/E[0]                                       | rst_IBUF         |               17 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_18[0]                        | rst_IBUF         |               10 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_10[0]                        | rst_IBUF         |               15 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_19[0]                        | rst_IBUF         |               16 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_2[0]                         | rst_IBUF         |               19 |             32 |
+|  clk_IBUF_BUFG | NPC/u_mem_wb/wb_rd_reg[3]_21[0]                        | rst_IBUF         |               14 |             32 |
+|  n_0_3053_BUFG |                                                        | rst_IBUF         |               14 |             32 |
+|  clk_IBUF_BUFG | NPC/u_ex_mem/FSM_sequential_wishbone_state_reg[0]_0[0] | rst_IBUF         |               13 |             50 |
+|  clk_IBUF_BUFG | NPC/u_if_id/id_addr[31]_i_1_n_1                        | rst_IBUF         |               17 |             70 |
+|  clk_IBUF_BUFG |                                                        | rst_IBUF         |               42 |            120 |
+|  clk_IBUF_BUFG | NPC/u_ex/E[0]                                          | rst_IBUF         |               56 |            176 |
+|  clk_IBUF_BUFG | NPC/u_ex/stall_req_reg_rep_1[0]                        | rst_IBUF         |               82 |            179 |
+|  clk_IBUF_BUFG | NPC/u_ex/stall_req_reg_rep__1_1                        | rst_IBUF         |               51 |            193 |
++----------------+--------------------------------------------------------+------------------+------------------+----------------+
+
+
